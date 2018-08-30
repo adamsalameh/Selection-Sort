@@ -33,7 +33,7 @@ void selectionSort (int array[], int length){
    
 int main()
 {
-       int array[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+       int array[] = {29, 31, 37, 41, 79, 83, 89, 43, 47, 53, 59, 61, 67, 71, 73, 2, 3, 5, 7, 11, 13, 17, 19, 23, 97};
         
        int length = (sizeof(array)/ sizeof(array[0]));
        selectionSort(array,length);
