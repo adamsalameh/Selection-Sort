@@ -7,26 +7,27 @@ import java.lang.*;
 class Rextester
 {  
     public static int[] selectionSort (int[] array){
-        for (int i = 0; i<array.length; i++){
+        
+        for (int i = 0; i<array.length-1; i++){
             
-               
-                int min = i;
-                int length = array.length;
-               for (int j = i + 1; j <length; j++){
-                   
+            int min = i;
+                        
+            for (int j = i + 1; j <array.length; j++){
+                
                 if (array[j] < array[min]){
                     min = j;
                 }
-                            
-                         }
+                
+            }
+            
             int temp = array[min];
-                      array[min] = array[i];
-                      array[i] = temp;
-                    
-                 
-    
-        } return array;
+            array[min] = array[i];
+            array[i] = temp;
+        }
+        
+        return array;
     }
+    
     public static void main(String args[])
     {
        
