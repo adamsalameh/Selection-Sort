@@ -5,7 +5,7 @@ using namespace std;
 
 void selectionSort (int array[], int length){
     
-        for (int i = 0; i<length; i++){
+        for (int i = 0; i<length-1; i++){
             int min = i;
             
             
@@ -27,7 +27,7 @@ void selectionSort (int array[], int length){
  /* Another way to return an array from function
  int* selectionSort (int array[], int length){
     
-        for (int i = 0; i<length; i++){
+        for (int i = 0; i<length-1; i++){
             int min = i;
             
             
